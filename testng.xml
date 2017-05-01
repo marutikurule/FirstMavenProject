@@ -1,0 +1,24 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="example suite 1" verbose="1">
+	<test name="Regression suite 1">
+		<classes>
+			<class name="firstMavenProject.firstMavenProject.TestScenarios">
+				<methods>
+					<exclude name="test1" />
+					<exclude name="test2" />
+					<exclude name="test3" />
+				</methods>
+			</class>
+			<class name="firstMavenProject.firstMavenProject.DataDrivenTest1">
+				<methods>
+					<exclude name="test1" />
+				</methods>
+			</class>
+			<class name="firstMavenProject.firstMavenProject.DataDrivenTest">
+				<methods>
+					<include name="test1" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>
