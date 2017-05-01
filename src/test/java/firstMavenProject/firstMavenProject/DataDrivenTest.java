@@ -41,6 +41,11 @@ public class DataDrivenTest
 		}
 		
 	}
+	
+	public void test2()
+	{
+		
+	}
 
 
 	@AfterMethod
